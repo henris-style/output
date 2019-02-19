@@ -1,6 +1,6 @@
 {
   "name": "@henris/output",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "output module for Henri's",
   "main": "index.scss",
   "scripts": {
