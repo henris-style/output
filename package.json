@@ -10,7 +10,8 @@
     "build": "npm run build:sass && npm run build:node-sass",
     "build:sass": "sass index.scss dist/sass/index.css",
     "build:node-sass": "node-sass index.scss dist/node-sass/index.css",
-    "prepublishOnly": "npm run test && npm run build"
+    "build:settings": "node node_modules/@henris/build/scripts/json-to-css.js",
+    "prepublishOnly": "npm run build:settings && npm run test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   },
   "homepage": "https://github.com/henris-style/output#readme",
   "devDependencies": {
+    "@henris/build": "0.0.1",
     "node-sass": "^4.11.0",
     "sass": "^1.17.0"
   }
