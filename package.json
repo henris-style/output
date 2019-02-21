@@ -11,7 +11,10 @@
     "build:sass": "sass index.local.scss dist/sass/index.css",
     "build:node-sass": "node-sass index.local.scss dist/node-sass/index.css",
     "build:settings": "node node_modules/@henris/build/scripts/json-to-css.js",
-    "prepublishOnly": "npm run build:settings && npm run test && npm run build"
+    "build:dist": "npm run stylelint:fix && npm run build",
+    "stylelint": "stylelint 'src/scss/**/*.scss'",
+    "stylelint:fix": "stylelint 'src/scss/**/*.scss' --fix",
+    "prepublishOnly": "npm run build:dist"
   },
   "repository": {
     "type": "git",
@@ -30,9 +33,12 @@
   },
   "homepage": "https://github.com/henris-style/output#readme",
   "devDependencies": {
-    "@henris/build": "0.0.2",
+    "@henris/build": "0.0.3",
     "node-sass": "^4.11.0",
-    "sass": "^1.17.0",
-    "ssst": "0.0.3"
+    "sass": "^1.17.1",
+    "ssst": "0.0.4",
+    "stylelint": "^9.10.1",
+    "stylelint-logical-order": "0.0.4",
+    "stylelint-order": "^2.0.0"
   }
 }

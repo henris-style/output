@@ -108,6 +108,7 @@
 			"spacing": true,
 			"table": false,
 			"typography": true,
+			"typography-base": true,
 			"typography-headings": true,
 			"typography-margins": true,
 			"typography-usage": true,

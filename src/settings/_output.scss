@@ -105,6 +105,7 @@ $output-showmore: false !default; //
 $output-spacing: true !default; //
 $output-table: false !default; //
 $output-typography: true !default; //
+$output-typography-base: true !default; //
 $output-typography-headings: true !default; //
 $output-typography-margins: true !default; //
 $output-typography-usage: true !default; //
@@ -224,6 +225,7 @@ $output: (
 	"spacing": true, 
 	"table": false, 
 	"typography": true, 
+	"typography-base": true, 
 	"typography-headings": true, 
 	"typography-margins": true, 
 	"typography-usage": true, 
